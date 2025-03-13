@@ -4,22 +4,50 @@
     padding: 20px;
 }
 
+.file-upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
     margin: 10px;
 }
 
-button {
-    background-color: #4CAF50;
+.custom-file-upload:hover {
+    background-color: #45a049;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.generate-button {
+    background-color: #008CBA;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-left: 10px;
 }
 
-button:hover {
-    background-color: #45a049;
+.generate-button:hover {
+    background-color: #007B9E;
 }
 
 table {
