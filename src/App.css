@@ -35,6 +35,13 @@ input[type="file"] {
     color: #333;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .generate-button {
     background-color: #008CBA;
     color: white;
@@ -46,7 +53,12 @@ input[type="file"] {
     margin-left: 10px;
 }
 
-.generate-button:hover {
+.generate-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.generate-button:hover:not(:disabled) {
     background-color: #007B9E;
 }
 
